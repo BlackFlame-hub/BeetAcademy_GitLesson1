@@ -1,0 +1,325 @@
+
+Eolte@BlackFlame MINGW64 ~
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+Eolte@BlackFlame MINGW64 ~
+$ pwd
+/c/Users/Eolte
+
+Eolte@BlackFlame MINGW64 ~
+$ cd d:/GitHub
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ pwd
+/d/GitHub
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ mkdir BeetAcademy_GitLesson1
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ ssh-keygen -t ed25519 -C "e.olteanu991@gmail.com" -f /d/GitHub/BeetAcademy_GitLesson1/SSH/id_ed25519
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Saving key "/d/GitHub/BeetAcademy_GitLesson1/SSH/id_ed25519" failed: No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ ssh-keygen -t ed25519 -C "e.olteanu991@gmail.com" -f /d/GitHub/BeetAcademy_GitLesson1/id_ed25519
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /d/GitHub/BeetAcademy_GitLesson1/id_ed25519
+Your public key has been saved in /d/GitHub/BeetAcademy_GitLesson1/id_ed25519.pub
+The key fingerprint is:
+SHA256:pRPeJ/SqmxzW05yq37dvu6BS2dXm8FKIObSY2MJMSZo e.olteanu991@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|       ...       |
+|       oo   .    |
+|      E+.oo+ + ..|
+|       .=*+.= o.+|
+|        S.o =..* |
+|         o O o. o|
+|        o = +. . |
+|       o = +. o .|
+|        *++....*+|
++----[SHA256]-----+
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ git clone hyyps://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+fatal: destination path 'BeetAcademy_GitLesson1' already exists and is not an empty directory.
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ git clone hyyps://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+Cloning into 'BeetAcademy_GitLesson1'...
+git: 'remote-hyyps' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote-https
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ git clone https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+Cloning into 'BeetAcademy_GitLesson1'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ cd repository
+bash: cd: repository: No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ pwd
+/d/GitHub
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ cd d/GitHub/BeetAcademy_GitLesson1
+bash: cd: d/GitHub/BeetAcademy_GitLesson1: No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ cd d/GitHub/BeetAcademy_GitLesson1/
+bash: cd: d/GitHub/BeetAcademy_GitLesson1/: No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub
+$ cd /d/GitHub/BeetAcademy_GitLesson1
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 1612
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ mkdir -p /d/GitHub/BeetAcademy_GitLesson1/SSH/
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ mv id_25519* /d/GitHub/BeetAcademy_GitLesson1/SSH/
+mv: cannot stat 'id_25519*': No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ mv id_25519* /d/GitHub/BeetAcademy_GitLesson1/SSH/
+mv: cannot stat 'id_25519*': No such file or directory
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ mv id_ed25519* /d/GitHub/BeetAcademy_GitLesson1/SSH/
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 1638
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ ssh-add /d/GitHub/BeetAcademy_GitLesson1/SSH/id_ed25519
+Identity added: /d/GitHub/BeetAcademy_GitLesson1/SSH/id_ed25519 (e.olteanu991@gmail.com)
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ cat /d/GitHub/BeetAcademy_GitLesson1/SSH/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBz5CefDjXW2Z4VDAG/1M5kdqWGKcO79fz/Gc1qFxtAB e.olteanu991@gmail.com
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git init
+Reinitialized existing Git repository in D:/GitHub/BeetAcademy_GitLesson1/.git/
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git add .
+warning: in the working copy of 'SSH/id_ed25519', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SSH/id_ed25519.pub', LF will be replaced by CRLF the next time Git touches it
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git coomit -m "Commit1"
+git: 'coomit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git commit -m "Commit1"
+[main f371695] Commit1
+ 2 files changed, 8 insertions(+)
+ create mode 100644 SSH/id_ed25519
+ create mode 100644 SSH/id_ed25519.pub
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git remote add origin https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+error: remote origin already exists.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ ^C
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git remote -v
+origin  https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git (fetch)
+origin  https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git (push)
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git'
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ ^C
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 768 bytes | 768.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+   b5c1cf7..f371695  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git add .
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git add WEBPAGE Tutorial
+fatal: pathspec 'WEBPAGE' did not match any files
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git add .
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git commit -m "Added webpage directory without styles"
+[main d2c22ff] Added webpage directory without styles
+ 10 files changed, 407 insertions(+)
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/bonkers.svg
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/cat.png
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/close.svg
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/css/main.css
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/index.html
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/logo.svg
+ create mode 100644 WEBPAGE Tutorial/2024 crash course source files/menu.svg
+ create mode 100644 WEBPAGE Tutorial/script.js
+ create mode 100644 WEBPAGE Tutorial/webpage/css/main.css
+ create mode 100644 WEBPAGE Tutorial/webpage/index.html
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git push -u origin main
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 221.91 KiB | 17.07 MiB/s, done.
+Total 16 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+   f371695..d2c22ff  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git branch features/styles-and-scripts
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git add .
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git git checkout main
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git branch feature/styles-and-scripts
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git checkout feature/styles-and-scripts
+Switched to branch 'feature/styles-and-scripts'
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git push -u origin feature/styles-and-scripts
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'feature/styles-and-scripts' on GitHub by visiting:
+remote:      https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1/pull/new/feature/styles-and-scripts
+remote:
+To https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+ * [new branch]      feature/styles-and-scripts -> feature/styles-and-scripts
+branch 'feature/styles-and-scripts' set up to track 'origin/feature/styles-and-scripts'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ ^C
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git add .
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git commit -m "Added styles and inline script, removed script.js"
+[feature/styles-and-scripts 884b552] Added styles and inline script, removed script.js
+ 3 files changed, 257 insertions(+), 5 deletions(-)
+ delete mode 100644 WEBPAGE Tutorial/script.js
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git push -origin feature/styles-and-scripts
+fatal: 'feature/styles-and-scripts' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git push -origin features/styles-and-scripts
+fatal: 'features/styles-and-scripts' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git push -u origin feature/styles-and-scripts
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.90 KiB | 1.90 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+   d2c22ff..884b552  feature/styles-and-scripts -> feature/styles-and-scripts
+branch 'feature/styles-and-scripts' set up to track 'origin/feature/styles-and-scripts'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (feature/styles-and-scripts)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git merge feature/styles-and-scripts
+Updating d2c22ff..884b552
+Fast-forward
+ WEBPAGE Tutorial/script.js            |   0
+ WEBPAGE Tutorial/webpage/css/main.css | 234 ++++++++++++++++++++++++++++++++++
+ WEBPAGE Tutorial/webpage/index.html   |  28 +++-
+ 3 files changed, 257 insertions(+), 5 deletions(-)
+ delete mode 100644 WEBPAGE Tutorial/script.js
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BlackFlame-hub/BeetAcademy_GitLesson1.git
+   d2c22ff..884b552  main -> main
+
+Eolte@BlackFlame MINGW64 /d/GitHub/BeetAcademy_GitLesson1 (main)
+$
